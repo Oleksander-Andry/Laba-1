@@ -1,25 +1,28 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32112.339
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba 1.1", "laba 1.1\laba 1.1.csproj", "{503970FF-FB3C-41E7-8725-87E14F193E98}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{503970FF-FB3C-41E7-8725-87E14F193E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{503970FF-FB3C-41E7-8725-87E14F193E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{503970FF-FB3C-41E7-8725-87E14F193E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{503970FF-FB3C-41E7-8725-87E14F193E98}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FC80B91F-D8D4-462F-BB06-576B280B6EA6}
-	EndGlobalSection
-EndGlobal
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _LR
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Лабораторна робота №1");
+            Console.WriteLine("");
+            Console.WriteLine("Виконав: Лісовський Олександр-Андрій Миколайович");
+            Console.WriteLine("Группа: ЕС-134Б");
+            Console.WriteLine("Назва ЛР:Структура консольного додатку в C#");
+            Console.WriteLine("");
+            double x = 2.09;
+            Console.WriteLine("x=2.09");
+            Console.WriteLine("G=(5/3)-arctg(sqrt(2-cos2x))-e^(-x/5)=");
+            Console.WriteLine(+((double)5 / 3) - Math.Atan(Math.Sqrt(2 - Math.Cos(2 * x))) - Math.Pow(Math.E, (double)-x / 5));
+            Console.WriteLine("для завершення роботи програми нажміть любу клавішу...");
+            Console.ReadKey();
+        }
+    }
+}
